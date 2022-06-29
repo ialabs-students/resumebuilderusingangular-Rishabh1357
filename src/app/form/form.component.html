@@ -1,0 +1,27 @@
+<p>Data Entry for the Resume Creation</p>
+<div *ngIf="!isResumeVisible" class ="container">
+    <div class = "r1">
+    <form action ="" id ="rForm" (submit)="submitResumeForm()">
+        <div class="row">
+            <div class="from-group col-md-4">
+                <label for="fname"> First Name</label>
+                <input id="fname" type="text" name="fname" class="form-control" 
+                [(ngModel)] = "formData.firstName">
+            </div>
+            <div class="from-group col-md-4">
+                <label for="mname"> Middle Name</label>
+                <input id="mname" type="text" name="mname" class="form-control"
+                [(ngModel)] = "formData.middleName">
+            </div>
+            <div class="from-group col-md-4">
+                <label for="lname"> Last Name</label>
+                <input id="lname" type="text" name="lname" class="form-control"
+                [(ngModel)] = "formData.lastName">
+            </div>
+        </div>
+        <div class ="btn">
+            <button type ="submit"  class="btn btn-success m-2">Submit</button>
+        </div>
+    </form>
+    </div>
+    </div>
